@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - CameraChange
+  - Player2
+  - CameraChange2
+  - Start
   layers:
   - Default
   - TransparentFX

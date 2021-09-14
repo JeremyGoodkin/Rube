@@ -14,7 +14,7 @@ public class CameraSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print(cameraChange);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -22,6 +22,10 @@ public class CameraSwitch : MonoBehaviour
         if (collision.transform.tag == "CameraChange")
         {
             cameraChange = 1;
+        }
+        else if (collision.transform.tag == "CameraChange2")
+        {
+            cameraChange = 2;
         }
     }
 }

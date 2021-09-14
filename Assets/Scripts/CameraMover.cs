@@ -11,6 +11,7 @@ public class CameraMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Start").transform;
     }
 
     // Update is called once per frame
@@ -19,6 +20,10 @@ public class CameraMover : MonoBehaviour
         if (CameraSwitch.cameraChange == 1)
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+        if (CameraSwitch.cameraChange == 2)
+        {
+            target = GameObject.FindGameObjectWithTag("Player2").transform;
         }
         Vector3 newPos = target.transform.position;
         newPos.z = transform.position.z;
